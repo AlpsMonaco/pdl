@@ -73,7 +73,6 @@ impl TaskHeader {
                 }
             }
         }
-
         if let Some(val) = header_map.get("Content-Length") {
             if let Ok(val) = val.to_str() {
                 if let Ok(val) = val.parse::<u64>() {
